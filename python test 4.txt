@@ -1,0 +1,13 @@
+def remove_duplicates(lst):
+    seen = set()
+    result = []
+    for item in lst:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+    return result
+
+# Example usage
+numbers = [1, 3, 2, 3, 4, 3, 5, 1, 2, 9, 7]
+unique_numbers = remove_duplicates(numbers)
+print("List after removing duplicates:", unique_numbers)
