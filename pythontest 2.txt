@@ -1,0 +1,9 @@
+from collections import Counter
+
+def most_frequent_element(lst):
+    counter = Counter(lst)
+    return counter.most_common(1)[0][0]  # Returns the most frequent element
+
+# Example usage
+numbers = [1, 3, 2, 3, 4, 3, 5, 1, 3, 2, 2, 2, 2]
+print("Most frequent element:", most_frequent_element(numbers))
