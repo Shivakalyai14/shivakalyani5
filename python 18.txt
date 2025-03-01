@@ -1,0 +1,8 @@
+CREATE TABLE employees (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    age INT,
+    email VARCHAR(100) UNIQUE,
+    salary DECIMAL(10,2),
+    department VARCHAR(50)
+);
